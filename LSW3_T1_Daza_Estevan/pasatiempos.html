@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="template initial"/>
+        <link rel="stylesheet" href="estilos/style.css"/>
+        <title>Mi Pagina HTML</title>
+    </head>
+    <body>
+        <header id="cabecera">
+            <br><br>
+            <h4>Taller de maquetado HTML-CSS</h4>
+            <script>
+                function makeArray(){ 
+                    for (i = 0; i < makeArray.arguments.length; i++)this[i + 1] = makeArray.arguments[i] 
+                }
+                var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                var date = new Date(); 
+                var day = date.getDate(); 
+                var month = date.getMonth() + 1; 
+                var yy = date.getYear(); 
+                var year = (yy < 1000) ? yy + 1900 : yy; 
+                document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+            </script>
+        </header>
+        <nav>
+            <ul class="navegacionPrin">
+                <li><a href="index.html">Presentacion</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="contenido">
+            <section id="contenidoPrin">
+                <article id="articulo1">
+                    <header id="titulo">
+                        <h3>Pasatiempos</h3>
+                    </header>
+                    <div class="div_grid">
+                        <div class='uno'>
+                            <img src='archivos\futsal.gif' width="300px" height="300px" /><span>FUTSALA</span> 
+                        </div>
+                        <div class='dos'>
+                            <img src='archivos\game.gif' width="300px" height="300px"/><span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class='tres'>
+                            <img src='archivos\walk.gif' width="300px" height="300px"/><span>CAMINAR</span>
+                        </div>
+                        <div class='cuatro'>
+                            <img src='archivos\futonce.gif' width="300px" height="300px"/><span>FUTBOL ONCE</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <footer id="piePrin">
+            <br><br>
+            <h2>Copyright 2022 - Ingeniería de Sistemas</h2>
+            <h2>Universidad del Cauca</h2>
+            <a href="https://www.facebook.com/C.daza.A/"><img src="archivos/face.png" width="25px" height="25px"/></a>
+            <a href="https://api.whatsapp.com/send?phone=573173743002"><img src="archivos\wsp.png" width="25px" height="25px"/></a>
+        </footer>
+    </body>
+</html>

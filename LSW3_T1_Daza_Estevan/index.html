@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="template initial" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title>Mi Pagina HTML</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <br><br>
+        <h4>Taller de maquetado HTML-CSS</h4>
+        <script>
+            function makeArray() {
+                for (i = 0; i < makeArray.arguments.length; i++)this[i + 1] = makeArray.arguments[i]
+            }
+            var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var yy = date.getYear();
+            var year = (yy < 1000) ? yy + 1900 : yy;
+            document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+        </script>
+    </header>
+    <nav>
+        <ul class="navegacionPrin">
+            <li><a href="index.html">Presentacion</a></li>
+            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="pasatiempos.html">Pasatiempos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contenido">
+        <section id="contenidoPrin">
+            <section id="imagen">
+                <figure>
+                    <img src="archivos\me.jpeg" width="100%" height="100%" />
+                </figure>
+            </section>
+            <article id="articulo1">
+                <header id="titulo">
+                    <h3>Autobiografia</h3>
+                </header>
+                <p>
+                    Mi nombre es ESTEVAN CAMILO DAZA ALEGRIA, tengo 23 años de edad y vivo en Popayán desde que
+                    recuerdo. Cuento con una gran familia
+                    y en la cual tengo dos hermanos mi hermano menor Manuel alejandro Daza Alegria y la mas chiquita
+                    Emily Diaz Alegria que es mi
+                    hermanita materna. Tambien tengo una gran compañera de vida que me ha acompañado durante los ultimos
+                    5 años, mi novia, y a la cual le agraadezco
+                    cada momento. Mi perrita que tambien tiene 5 años de estar a mi lado y que ha sido una alegria en mi
+                    vida, tanto para mi como para
+                    toda mi familia.
+                    Actualmente mis padres reciden aqui en Popayán pero no vivo con ninguno de ellos ya que ellos son
+                    separados
+                    desde hace mucho tiempo. Mi madre vive con mis hermanos y mi padrasto y mi padre solo con mi
+                    madrasta. En la casa donde resido es
+                    de mi abuela y recide tambien mi tia. Mis abuelos viven en una parcela ubicada a unos pocos
+                    kilometros de Popayán donde siempre
+                    voy a visitarlos.
+                </p>
+                <p>
+                    Curse mi primaria en el colegio tecnico industrial sede los hoyos, ahi hice hasta mi 5 año y de 6
+                    año al 11 lo curse en la
+                    Academia Militar Gnrl Tomas Cipriano de Mosquera. Actualmente soy estudiante de ingenieria de
+                    sistemas de la Universidad del Cauca
+                    Algunos de mis gustos van desde jugar futbol ya sea futbol sala o futbol once hasta jugar algunos
+                    video juegos competitivos tales
+                    como valorant o csgo. Algunas de mis aspirraciones para el futuro es poder crecer profesionalmente y
+                    poder contar con un buen empleo
+                    que me permita desarrollarlo tanto presencialmente como en casa o fuera de casa.
+                </p>
+            </article>
+        </section>
+    </section>
+    <footer id="piePrin">
+        <br><br>
+        <h2>Copyright 2022 - Ingeniería de Sistemas</h2>
+        <h2>Universidad del Cauca</h2>
+        <a href="https://www.facebook.com/C.daza.A/"><img src="archivos/face.png" width="25px" height="25px" /></a>
+        <a href="https://api.whatsapp.com/send?phone=573173743002"><img src="archivos\wsp.png" width="25px"
+                height="25px" /></a>
+    </footer>
+</body>
+
+</html>

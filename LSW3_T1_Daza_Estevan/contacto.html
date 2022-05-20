@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="template initial" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title>Mi Pagina HTML</title>
+</head>
+
+<body>
+    <header id="cabecera">
+        <br><br>
+        <h4>Taller de maquetado HTML-CSS</h4>
+        <script>
+            function makeArray(){ 
+                for (i = 0; i < makeArray.arguments.length; i++)this[i + 1] = makeArray.arguments[i] 
+            }
+            var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+            var date = new Date(); 
+            var day = date.getDate(); 
+            var month = date.getMonth() + 1; 
+            var yy = date.getYear(); 
+            var year = (yy < 1000) ? yy + 1900 : yy; 
+            document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+        </script>
+    </header>
+    <nav>
+        <ul class="navegacionPrin">
+            <li><a href="index.html">Presentacion</a></li>
+            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="pasatiempos.html">Pasatiempos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contenido">
+        <section id="contenidoPrin">
+            <article id="articulo1">
+                <header id="titulo">
+                    <h3>contacto</h3>
+                </header>
+                <form style="text-align: center; ">
+                    <p>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name">
+                    </p>
+                    <p>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </p>
+                    <p>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </p>
+
+                    <script>
+                        function confirmacion() {
+                            var pregunta = confirm("¿Deseas enviar el mensaje?")
+                            if (pregunta) {
+                                alert("Mensaje Enviado!!\nGracias por tu interes!!")
+                                window.location = "index.html";
+                            }
+                            else {
+                                alert("Quizás en otro momento...\n Gracias de todas formas :)")
+                            }
+                        }
+                    </script>
+                    <button type="button" onclick="confirmacion()">¡Enviar!</button>
+
+                </form>
+
+                <body>
+                    <h1>¿Calificacion = 5.0?</h1>
+                    <script>
+                      var flag = 1;
+                  
+                      function t() {
+                        if (flag == 1) {
+                          N.style.top = "75px";
+                          N.style.left = "700px"
+                        }
+                        if (flag == 2) {
+                          N.style.top = "115px";
+                          N.style.left = "100px"
+                        }
+                        if (flag == 3) {
+                          N.style.top = "300px";
+                          N.style.left = "350px"
+                        }
+                        flag = flag + 1;
+                        if (flag == 4) {
+                          flag = 1
+                        }
+                      }
+                  
+                      function al() {
+                        alert("Correcto!")
+                      }
+                    </script>
+                    
+                    <div id="N" class="c1">
+                      <form>
+                        <input type="button" value="NO" onmouseover="t()" />
+                      </form>
+                    </div>
+                    <div id="Y" class="c2">
+                      <form>
+                        <input type="button" value="SI" onclick="al()" />
+                      </form>
+                    </div>
+                  </body>
+
+                <header id="titulo">
+                    <h3>Me puedes encontrar en</h3>
+                </header>
+                <div class="div_padre">
+                    <div class="div_hijo">
+                        <img src="archivos\qr-contact.png" width="100%" height="100%" />
+                    </div>
+                    <div class="div_hijo">
+                        <img src="archivos\qr-github.png" width="100%" height="100%" />
+                    </div>
+                    <div class="div_hijo">
+                        <img src="archivos\qr-in.png" width="100%" height="100%" />
+                    </div>
+                    <div class="div_hijo">
+                        <img src="archivos\qr-insta.png" width="100%" height="100%" />
+                    </div>
+                    <div class="div_hijo">
+                        <img src="archivos\qr-mail.png" width="100%" height="100%" />
+                    </div>
+                    <div class="div_hijo">
+                        <img src="archivos\qr-twtr.png" width="100%" height="100%" />
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <footer id="piePrin">
+        <br><br>
+        <h2>Copyright 2022 - Ingeniería de Sistemas</h2>
+        <h2>Universidad del Cauca</h2>
+        <a href="https://www.facebook.com/C.daza.A/"><img src="archivos/face.png" width="25px" height="25px" /></a>
+        <a href="https://api.whatsapp.com/send?phone=573173743002"><img src="archivos\wsp.png" width="25px"
+                height="25px" /></a>
+    </footer>
+</body>
+
+</html>
